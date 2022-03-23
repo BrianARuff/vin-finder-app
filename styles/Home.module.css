@@ -1,0 +1,146 @@
+.main {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222831;
+  flex-flow: column nowrap;
+  padding: 16px auto;
+}
+
+.main > p {
+  color: #ffd369;
+}
+
+.h1 {
+  text-align: center;
+  line-height: 32px;
+  font-size: 28px;
+  color: #eeeeee;
+  width: 100%;
+  margin-top: 52px;
+  font-weight: bolder;
+}
+
+.ul {
+  display: flex;
+  flex-flow: column wrap;
+  align-self: flex-start;
+  line-height: 20px;
+  font-size: 16px;
+  width: 100%;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.ul > li {
+  list-style: none;
+  color: #eeeeee;
+  font-size: 1.25rem;
+  word-wrap: break-word;
+  margin: 20px 0px;
+}
+
+.ul > li > span {
+  color: #ffd369;
+}
+
+.message {
+  border: 1px solid #ffd369;
+  width: 100%;
+}
+
+.message > p {
+  color: #eeeeee;
+  padding: 20px;
+  font-size: 1rem;
+  align-self: flex-end;
+  text-align: center;
+  font-weight: bold;
+}
+
+.inputContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 1px) and (max-width: 1024px) {
+  .inputContainer {
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+
+/* input format error */
+.inputContainer p {
+  font-size: 0.8rem;
+  color: #ffd369;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+/* search input */
+.inputContainer > input {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  border: 1px solid #ffd369;
+  margin-bottom: 2px;
+  font-size: 20px;
+}
+
+.inputContainer > input:focus-within {
+  margin-bottom: 3px;
+}
+
+.inputContainer > input::placeholder {
+  font-size: 0.8rem;
+  color: #393e46;
+  padding-left: 12.5px;
+  border-radius: 5px;
+}
+
+/* button */
+.inputContainer > button {
+  max-width: 500px;
+  color: #393e46;
+  background-color: #ffd369;
+  border-color: #393e46;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-size: 2.25rem;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  margin: 1rem;
+}
+
+.loading {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.main button {
+  cursor: pointer;
+}
