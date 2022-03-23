@@ -36,10 +36,6 @@ function Home() {
       return setError(hasError);
     }
 
-    console.log('carinfo data', carInfo);
-
-    console.log('haserr', hasError);
-
     setShowResults(true);
 
     setCarInfo(() => carInfo);
@@ -144,9 +140,6 @@ function Home() {
         }</button>
       </form>
       {
-        console.log('carinfro from render', carInfo)
-      }
-      {
         showResults && Object.keys(carInfo || {}).length > 0 &&
         <ul className={styles.ul}>
           <li>Year: <span>{carInfo.year}</span></li>
@@ -158,10 +151,7 @@ function Home() {
           <li>Transmission: <span>{carInfo.transmission}</span></li>
         </ul>
       }
-      {
-        hasSearched &&
-        <button onKeyDown={resetAllConditions} onClick={resetAllConditionsClick} >Reset All</button>
-      }
+      <button onKeyDown={resetAllConditions} onClick={resetAllConditionsClick} >Reset All</button>
       <p>Vin Finder© created by Brian Ruff</p>
     </main >
   )
