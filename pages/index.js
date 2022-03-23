@@ -117,7 +117,7 @@ function Home() {
 
           {
             Object.keys(carInfo?.data || {}).length < 0 &&
-            <p className={styles.noCarInfoFound}>Unable to find your vehicle's information</p>
+            <p className={styles.noCarInfoFound}>Unable to find your vehicle&apos;s information</p>
           }
 
           {
