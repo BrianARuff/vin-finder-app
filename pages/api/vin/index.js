@@ -14,7 +14,7 @@ export default async function handler(req, res) {
     }
   });
 
-  const hasError = Object.keys(data.data || {}).length < 1;
+  const hasError = Object.keys(data.data || {}).length === 0;
 
   res.status(200).json({ carInfo: data.data, hasError });
 };

@@ -60,15 +60,16 @@
   font-weight: bold;
 }
 
-.inputContainer {
+.form {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: column nowrap;
 }
 
 @media screen and (min-width: 1px) and (max-width: 1024px) {
-  .inputContainer {
+  .form {
     width: 100%;
     flex-direction: column;
     padding: 10px;
@@ -76,7 +77,7 @@
 }
 
 /* input format error */
-.inputContainer p {
+.form p {
   font-size: 0.8rem;
   color: #ffd369;
   font-weight: bold;
@@ -84,7 +85,7 @@
 }
 
 /* search input */
-.inputContainer > input {
+.form > input {
   width: 100%;
   max-width: 500px;
   padding: 20px;
@@ -93,11 +94,11 @@
   font-size: 20px;
 }
 
-.inputContainer > input:focus-within {
+.form > input:focus-within {
   margin-bottom: 3px;
 }
 
-.inputContainer > input::placeholder {
+.form > input::placeholder {
   font-size: 0.8rem;
   color: #393e46;
   padding-left: 12.5px;
@@ -105,7 +106,7 @@
 }
 
 /* button */
-.inputContainer > button {
+.submitInput {
   max-width: 500px;
   color: #393e46;
   background-color: #ffd369;
@@ -117,6 +118,7 @@
   width: 100%;
   text-align: center;
   margin: 1rem;
+  cursor: pointer;
 }
 
 .loading {
