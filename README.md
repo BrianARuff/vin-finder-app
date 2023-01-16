@@ -1,7 +1,6 @@
 # [View The Site](https://brian-ruff-vin-info.vercel.app/)
 
 ### Site Description
----
 Created and published a reusable star rating voting system package using ReactJS, available through NPM
 for other developers to easily integrate into their web projects. The package includes customizable hover and
 on-click events, providing a seamless user experience. Developers can retrieve and display the ratings in a
